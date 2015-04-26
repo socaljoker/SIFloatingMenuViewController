@@ -23,9 +23,9 @@
 }
 
 -(void)loadMenuItems {
-    SIMenuItem *menuItem1 = [SIMenuItem menuItemWithTitle:@"View 1" image:[UIImage imageNamed:@"MyBargains"]];
-    SIMenuItem *menuItem2 = [SIMenuItem menuItemWithTitle:@"View 2" image:[UIImage imageNamed:@"Bargainplace"]];
-    SIMenuItem *menuItem3 = [SIMenuItem menuItemWithTitle:@"View 3" image:[UIImage imageNamed:@"Account"]];
+    SIMenuItem *menuItem1 = [SIMenuItem menuItemWithTitle:@"View 1" image:[UIImage imageNamed:@"Image1"]];
+    SIMenuItem *menuItem2 = [SIMenuItem menuItemWithTitle:@"View 2" image:[UIImage imageNamed:@"Image2"]];
+    SIMenuItem *menuItem3 = [SIMenuItem menuItemWithTitle:@"View 3" image:[UIImage imageNamed:@"Image3"]];
     
     [self.menuTableView setMenuItems:@[menuItem1, menuItem2, menuItem3]];
     

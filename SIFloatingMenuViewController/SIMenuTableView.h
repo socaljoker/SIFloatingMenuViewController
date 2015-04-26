@@ -57,6 +57,4 @@ typedef TDBadgedCell* (^ModifyTableViewCell)(SIMenuTableView *tableView, NSIndex
  */
 @property (strong, nonatomic) UIColor *menuItemTitleTextColor;
 
-@property (nonatomic) CGSize cellImageSize;
-
 @end

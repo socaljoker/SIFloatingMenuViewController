@@ -35,7 +35,6 @@
     self.menuItemTitleFont = [UIFont fontWithName:@"HelveticaNeue-Light" size:16];
     self.menuItemTitleTextColor = [UIColor blackColor];
     self.separatorStyle = UITableViewCellSeparatorStyleNone;
-    self.cellImageSize = CGSizeMake(30, 30);
 }
 
 #pragma mark - Table View Data Source Methods
