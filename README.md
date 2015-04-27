@@ -1,6 +1,6 @@
 # SIFloatingMenuViewController
 ---
-This is a floating menu style navigation inspired by MailChimp's iOS menu navigation control. See a demo below:
+This is a floating menu style navigation inspired by MailChimp's iOS menu navigation control. It utilizes the VBFPopFlatButton and TDBadgedCell frameworks. See a demo below:
 
 ##Demo
 ![Demo Gif]
