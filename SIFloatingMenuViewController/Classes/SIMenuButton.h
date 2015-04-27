@@ -17,6 +17,9 @@ typedef void (^MenuButtonPressCancelled)(SIMenuButton *button);
 
 @interface SIMenuButton : UIButton
 
+/**
+ *  The icon in the middle of the button.
+ */
 @property (strong, nonatomic, readonly) VBFPopFlatButton *buttonIcon;
 
 /**
