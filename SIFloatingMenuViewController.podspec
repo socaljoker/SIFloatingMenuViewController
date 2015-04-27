@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SIFloatingMenuViewController"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "A floating menu style navigation inspired by MailChimp's iOS menu navigation control."
 
   s.homepage         = "https://github.com/socaljoker/SIFloatingMenuViewController"
