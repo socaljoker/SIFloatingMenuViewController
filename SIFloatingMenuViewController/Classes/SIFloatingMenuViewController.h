@@ -96,12 +96,12 @@ typedef void (^MenuItemSelected)(SIMenuItem *menuItem, NSUInteger selectedIndex)
 /**
  *  How quickly the menuButton animates on screen. Must be a value between 0 and 20.
  */
-@property (nonatomic) CGFloat menuButtonAnimationSpeed;
+@property (nonatomic) CGFloat animationSpeed;
 
 /**
  *  How bouncy the menuButton is while animating. Must be a value between 0 and 20.
  */
-@property (nonatomic) CGFloat menuButtonAnimationBounciness;
+@property (nonatomic) CGFloat animationBounciness;
 
 /**
  *  When the menuButton is pressed, this determines how much it scales down. Must be a value between 0 and 1.

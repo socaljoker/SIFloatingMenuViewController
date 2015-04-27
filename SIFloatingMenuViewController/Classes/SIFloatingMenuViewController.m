@@ -75,8 +75,8 @@
     self.menuButtonAnimationType = kSIMenuAnimationTypeFromBottom;
     self.menuButtonLocation = kSIMenuLocationBottomLeft;
     self.animateMenuButtonIconToInitialState = YES;
-    self.menuButtonAnimationSpeed = DEFAULT_MENU_BUTTON_ANIMATION_SPEED;
-    self.menuButtonAnimationBounciness = DEFAULT_MENU_BUTTON_ANIMATION_BOUNCINESS;
+    self.animationSpeed = DEFAULT_MENU_BUTTON_ANIMATION_SPEED;
+    self.animationBounciness = DEFAULT_MENU_BUTTON_ANIMATION_BOUNCINESS;
     self.menuButtonPressedAnimationScale = DEFAULT_MENU_BUTTON_PRESSED_ANIMATION_SCALE;
     self.dimmedViewAlpha = DEFAULT_DIMMED_VIEW_ALPHA;
     self.dimmedViewAnimationSpeed = DEFAULT_DIMMED_VIEW_ANIMATION_SPEED;
@@ -90,12 +90,12 @@
     [self showMenuButtonAnimated:YES];
 }
 
--(void)setMenuButtonAnimationSpeed:(CGFloat)menuButtonAnimationSpeed {
-    _menuButtonAnimationSpeed = MAX(0, MIN(20, menuButtonAnimationSpeed));
+-(void)setAnimationSpeed:(CGFloat)menuButtonAnimationSpeed {
+    _animationSpeed = MAX(0, MIN(20, menuButtonAnimationSpeed));
 }
 
--(void)setMenuButtonAnimationBounciness:(CGFloat)menuButtonAnimationBounciness {
-    _menuButtonAnimationBounciness = MAX(0, MIN(20, menuButtonAnimationBounciness));
+-(void)setAnimationBounciness:(CGFloat)menuButtonAnimationBounciness {
+    _animationBounciness = MAX(0, MIN(20, menuButtonAnimationBounciness));
 }
 
 -(void)setMenuButtonPressedAnimationScale:(CGFloat)menuButtonPressedAnimationScale {
@@ -163,8 +163,8 @@
     POPSpringAnimation *animation = [POPSpringAnimation animation];
     
     animation.property = [POPAnimatableProperty propertyWithName:kPOPViewScaleXY];
-    animation.springSpeed = self.menuButtonAnimationSpeed;
-    animation.springBounciness = self.menuButtonAnimationBounciness;
+    animation.springSpeed = self.animationSpeed;
+    animation.springBounciness = self.animationBounciness;
     animation.toValue = toValue;
     
     [self.menuButton pop_addAnimation:animation forKey:@"MenuButtonPressedAnimation"];
@@ -320,8 +320,8 @@
         POPSpringAnimation *animation = [POPSpringAnimation animation];
         
         animation.property = [POPAnimatableProperty propertyWithName:kPOPViewFrame];
-        animation.springSpeed = self.menuButtonAnimationSpeed;
-        animation.springBounciness = self.menuButtonAnimationBounciness;
+        animation.springSpeed = self.animationSpeed;
+        animation.springBounciness = self.animationBounciness;
         animation.toValue = toValue;
         
         [self.menuButton pop_addAnimation:animation forKey:@"MenuButtonYOffsetAnimation"];
@@ -355,8 +355,8 @@
         POPSpringAnimation *animation = [POPSpringAnimation animation];
         
         animation.property = [POPAnimatableProperty propertyWithName:kPOPViewFrame];
-        animation.springSpeed = self.menuButtonAnimationSpeed;
-        animation.springBounciness = self.menuButtonAnimationBounciness;
+        animation.springSpeed = self.animationSpeed;
+        animation.springBounciness = self.animationBounciness;
         animation.toValue = toValue;
         
         [self.menuTableView pop_addAnimation:animation forKey:@"MenuAnimation"];
@@ -387,8 +387,8 @@
         POPSpringAnimation *animation = [POPSpringAnimation animation];
         
         animation.property = [POPAnimatableProperty propertyWithName:kPOPViewFrame];
-        animation.springSpeed = self.menuButtonAnimationSpeed;
-        animation.springBounciness = self.menuButtonAnimationBounciness;
+        animation.springSpeed = self.animationSpeed;
+        animation.springBounciness = self.animationBounciness;
         animation.toValue = toValue;
         
         [self.menuTableView pop_addAnimation:animation forKey:@"MenuHideAnimation"];
@@ -414,8 +414,8 @@
         POPSpringAnimation *animation = [POPSpringAnimation animation];
         
         animation.property = [POPAnimatableProperty propertyWithName:kPOPViewFrame];
-        animation.springSpeed = self.menuButtonAnimationSpeed;
-        animation.springBounciness = self.menuButtonAnimationBounciness;
+        animation.springSpeed = self.animationSpeed;
+        animation.springBounciness = self.animationBounciness;
         animation.toValue = toValue;
         
         [self.menuButton pop_addAnimation:animation forKey:@"MenuButtonAnimation"];
