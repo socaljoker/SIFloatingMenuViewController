@@ -8,7 +8,6 @@
 
 #import "SIFloatingMenuViewController.h"
 #import "POP.h"
-#import "AppDelegate.h"
 
 #define DEFAULT_MENU_BUTTON_WIDTH 40
 #define DEFAULT_MENU_BUTTON_HEIGHT 40

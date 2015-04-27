@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		297367AA1AEDAD9200712C25 /* SIFloatingMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 297367A31AEDAD9200712C25 /* SIFloatingMenuViewController.m */; };
+		297367AB1AEDAD9200712C25 /* SIMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 297367A51AEDAD9200712C25 /* SIMenuButton.m */; };
+		297367AC1AEDAD9200712C25 /* SIMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 297367A71AEDAD9200712C25 /* SIMenuItem.m */; };
+		297367AD1AEDAD9200712C25 /* SIMenuTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 297367A91AEDAD9200712C25 /* SIMenuTableView.m */; };
 		29D4C5811AE735BF00F3B712 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D4C5801AE735BF00F3B712 /* main.m */; };
 		29D4C5841AE735BF00F3B712 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D4C5831AE735BF00F3B712 /* AppDelegate.m */; };
 		29D4C58A1AE735BF00F3B712 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29D4C5881AE735BF00F3B712 /* Main.storyboard */; };
 		29D4C58C1AE735BF00F3B712 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29D4C58B1AE735BF00F3B712 /* Images.xcassets */; };
 		29D4C58F1AE735BF00F3B712 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29D4C58D1AE735BF00F3B712 /* LaunchScreen.xib */; };
 		29D4C59B1AE735BF00F3B712 /* SIFloatingMenuViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D4C59A1AE735BF00F3B712 /* SIFloatingMenuViewControllerTests.m */; };
-		29D4C5A61AE7362200F3B712 /* SIFloatingMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D4C5A51AE7362200F3B712 /* SIFloatingMenuViewController.m */; };
-		29DCE9A51AEC099B00729EE8 /* SIMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DCE9A41AEC099B00729EE8 /* SIMenuItem.m */; };
-		29DCE9A81AEC0E0600729EE8 /* SIMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DCE9A71AEC0E0600729EE8 /* SIMenuButton.m */; };
-		29DCE9AB1AEC0E2400729EE8 /* SIMenuTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DCE9AA1AEC0E2400729EE8 /* SIMenuTableView.m */; };
 		29DCE9AE1AEC60F500729EE8 /* DemoFloatingMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DCE9AD1AEC60F500729EE8 /* DemoFloatingMenuViewController.m */; };
 		ABC9FFF116D2D24EA36C8AD9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C97ADAB65C7B4CB1B63BCB4 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -32,6 +32,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		297367A21AEDAD9200712C25 /* SIFloatingMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIFloatingMenuViewController.h; path = Classes/SIFloatingMenuViewController.h; sourceTree = "<group>"; };
+		297367A31AEDAD9200712C25 /* SIFloatingMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIFloatingMenuViewController.m; path = Classes/SIFloatingMenuViewController.m; sourceTree = "<group>"; };
+		297367A41AEDAD9200712C25 /* SIMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIMenuButton.h; path = Classes/SIMenuButton.h; sourceTree = "<group>"; };
+		297367A51AEDAD9200712C25 /* SIMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIMenuButton.m; path = Classes/SIMenuButton.m; sourceTree = "<group>"; };
+		297367A61AEDAD9200712C25 /* SIMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIMenuItem.h; path = Classes/SIMenuItem.h; sourceTree = "<group>"; };
+		297367A71AEDAD9200712C25 /* SIMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIMenuItem.m; path = Classes/SIMenuItem.m; sourceTree = "<group>"; };
+		297367A81AEDAD9200712C25 /* SIMenuTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIMenuTableView.h; path = Classes/SIMenuTableView.h; sourceTree = "<group>"; };
+		297367A91AEDAD9200712C25 /* SIMenuTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIMenuTableView.m; path = Classes/SIMenuTableView.m; sourceTree = "<group>"; };
 		29D4C57B1AE735BF00F3B712 /* SIFloatingMenuViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SIFloatingMenuViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29D4C57F1AE735BF00F3B712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29D4C5801AE735BF00F3B712 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -43,14 +51,6 @@
 		29D4C5941AE735BF00F3B712 /* SIFloatingMenuViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SIFloatingMenuViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29D4C5991AE735BF00F3B712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29D4C59A1AE735BF00F3B712 /* SIFloatingMenuViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIFloatingMenuViewControllerTests.m; sourceTree = "<group>"; };
-		29D4C5A41AE7362200F3B712 /* SIFloatingMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIFloatingMenuViewController.h; sourceTree = "<group>"; };
-		29D4C5A51AE7362200F3B712 /* SIFloatingMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIFloatingMenuViewController.m; sourceTree = "<group>"; };
-		29DCE9A31AEC099B00729EE8 /* SIMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMenuItem.h; sourceTree = "<group>"; };
-		29DCE9A41AEC099B00729EE8 /* SIMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMenuItem.m; sourceTree = "<group>"; };
-		29DCE9A61AEC0E0600729EE8 /* SIMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMenuButton.h; sourceTree = "<group>"; };
-		29DCE9A71AEC0E0600729EE8 /* SIMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMenuButton.m; sourceTree = "<group>"; };
-		29DCE9A91AEC0E2400729EE8 /* SIMenuTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMenuTableView.h; sourceTree = "<group>"; };
-		29DCE9AA1AEC0E2400729EE8 /* SIMenuTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMenuTableView.m; sourceTree = "<group>"; };
 		29DCE9AC1AEC60F500729EE8 /* DemoFloatingMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoFloatingMenuViewController.h; sourceTree = "<group>"; };
 		29DCE9AD1AEC60F500729EE8 /* DemoFloatingMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoFloatingMenuViewController.m; sourceTree = "<group>"; };
 		2C97ADAB65C7B4CB1B63BCB4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,14 +104,14 @@
 				29D4C5831AE735BF00F3B712 /* AppDelegate.m */,
 				29DCE9AC1AEC60F500729EE8 /* DemoFloatingMenuViewController.h */,
 				29DCE9AD1AEC60F500729EE8 /* DemoFloatingMenuViewController.m */,
-				29D4C5A41AE7362200F3B712 /* SIFloatingMenuViewController.h */,
-				29D4C5A51AE7362200F3B712 /* SIFloatingMenuViewController.m */,
-				29DCE9A31AEC099B00729EE8 /* SIMenuItem.h */,
-				29DCE9A41AEC099B00729EE8 /* SIMenuItem.m */,
-				29DCE9A61AEC0E0600729EE8 /* SIMenuButton.h */,
-				29DCE9A71AEC0E0600729EE8 /* SIMenuButton.m */,
-				29DCE9A91AEC0E2400729EE8 /* SIMenuTableView.h */,
-				29DCE9AA1AEC0E2400729EE8 /* SIMenuTableView.m */,
+				297367A21AEDAD9200712C25 /* SIFloatingMenuViewController.h */,
+				297367A31AEDAD9200712C25 /* SIFloatingMenuViewController.m */,
+				297367A41AEDAD9200712C25 /* SIMenuButton.h */,
+				297367A51AEDAD9200712C25 /* SIMenuButton.m */,
+				297367A61AEDAD9200712C25 /* SIMenuItem.h */,
+				297367A71AEDAD9200712C25 /* SIMenuItem.m */,
+				297367A81AEDAD9200712C25 /* SIMenuTableView.h */,
+				297367A91AEDAD9200712C25 /* SIMenuTableView.m */,
 				29D4C5881AE735BF00F3B712 /* Main.storyboard */,
 				29D4C58B1AE735BF00F3B712 /* Images.xcassets */,
 				29D4C58D1AE735BF00F3B712 /* LaunchScreen.xib */,
@@ -299,12 +299,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				29D4C5841AE735BF00F3B712 /* AppDelegate.m in Sources */,
+				297367AC1AEDAD9200712C25 /* SIMenuItem.m in Sources */,
+				297367AA1AEDAD9200712C25 /* SIFloatingMenuViewController.m in Sources */,
 				29D4C5811AE735BF00F3B712 /* main.m in Sources */,
-				29D4C5A61AE7362200F3B712 /* SIFloatingMenuViewController.m in Sources */,
-				29DCE9A51AEC099B00729EE8 /* SIMenuItem.m in Sources */,
-				29DCE9AB1AEC0E2400729EE8 /* SIMenuTableView.m in Sources */,
-				29DCE9A81AEC0E0600729EE8 /* SIMenuButton.m in Sources */,
 				29DCE9AE1AEC60F500729EE8 /* DemoFloatingMenuViewController.m in Sources */,
+				297367AD1AEDAD9200712C25 /* SIMenuTableView.m in Sources */,
+				297367AB1AEDAD9200712C25 /* SIMenuButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +350,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -386,6 +387,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -393,6 +395,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -423,6 +426,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;
 		};
