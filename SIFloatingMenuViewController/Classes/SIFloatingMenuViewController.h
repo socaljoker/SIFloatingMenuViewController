@@ -149,7 +149,7 @@ typedef void (^MenuItemSelected)(SIMenuItem *menuItem, NSUInteger selectedIndex)
 /**
  *  The view displayed behind the menu when the menu is being displayed.
  */
-@property (strong, nonatomic) FXBlurView *backgroundView;
+@property (strong, nonatomic, readonly) FXBlurView *backgroundView;
 
 /**
  *  DESIGNATED INITIALIZER

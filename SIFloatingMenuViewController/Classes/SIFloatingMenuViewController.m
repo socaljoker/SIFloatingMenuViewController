@@ -32,7 +32,7 @@
 
 @implementation SIFloatingMenuViewController
 
-@synthesize menuButton = _menuButton, menuTableView = _menuTableView;
+@synthesize menuButton = _menuButton, menuTableView = _menuTableView, backgroundView = _backgroundView;
 
 -(instancetype)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
@@ -291,13 +291,11 @@
             self.backgroundView.alpha = 0;
         } completion:^(BOOL finished) {
             [self.backgroundView removeFromSuperview];
-            self.backgroundView = nil;
         }];
     }
     else {
         self.backgroundView.alpha = 0;
         [self.backgroundView removeFromSuperview];
-        self.backgroundView = nil;
     }
 }
 
