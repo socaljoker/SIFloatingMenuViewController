@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SIFloatingMenuViewController"
-  s.version          = "0.1.2"
+  s.version          = "0.1.3"
   s.summary          = "A floating menu style navigation inspired by MailChimp's iOS menu navigation control."
 
   s.homepage         = "https://github.com/socaljoker/SIFloatingMenuViewController"
@@ -26,4 +26,5 @@ Pod::Spec.new do |s|
   s.dependency 'VBFPopFlatButton','~>0.0.6'
   s.dependency 'TDBadgedCell','~>3.0'
   s.dependency 'pop','~>1.0.6'
+  s.dependency 'FXBlurView','~>1.6.3'
 end
