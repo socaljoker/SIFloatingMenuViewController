@@ -18,7 +18,6 @@
 #define DEFAULT_MENU_BUTTON_ANIMATION_BOUNCINESS 13
 #define DEFAULT_MENU_BUTTON_PRESSED_ANIMATION_SCALE 0.75
 
-#define DEFAULT_DIMMED_VIEW_ALPHA 0.5
 #define DEFAULT_DIMMED_VIEW_ANIMATION_SPEED 0.25
 
 #define BOTTOM_MENU_BUFFER 50
@@ -26,7 +25,6 @@
 @interface SIFloatingMenuViewController () <UITableViewDelegate>
 
 @property (nonatomic) BOOL animateMenuButtonIconToInitialState;
-@property (strong, nonatomic) UIView *dimmedView;
 @property (nonatomic) CGRect currentMenuButtonFrame;
 @property (strong, nonatomic) UITapGestureRecognizer *tapGesture;
 
@@ -78,8 +76,7 @@
     self.animationSpeed = DEFAULT_MENU_BUTTON_ANIMATION_SPEED;
     self.animationBounciness = DEFAULT_MENU_BUTTON_ANIMATION_BOUNCINESS;
     self.menuButtonPressedAnimationScale = DEFAULT_MENU_BUTTON_PRESSED_ANIMATION_SCALE;
-    self.dimmedViewAlpha = DEFAULT_DIMMED_VIEW_ALPHA;
-    self.dimmedViewAnimationSpeed = DEFAULT_DIMMED_VIEW_ANIMATION_SPEED;
+    self.backgroundViewAnimationSpeed = DEFAULT_DIMMED_VIEW_ANIMATION_SPEED;
     self.backgroundTapDismissesMenu = YES;
     _menuIsOpen = NO;
 }
@@ -142,19 +139,15 @@
     return _tapGesture;
 }
 
--(UIView *)dimmedView {
-    if (!_dimmedView) {
-        _dimmedView = [[UIView alloc] initWithFrame:self.view.bounds];
-        _dimmedView.backgroundColor = [UIColor colorWithRed:0./255. green:0./255. blue:0./255. alpha:self.dimmedViewAlpha];
+-(UIView *)backgroundView {
+    if (!_backgroundView) {
+        _backgroundView = [[FXBlurView alloc] initWithFrame:self.view.bounds];
+        _backgroundView.backgroundColor = [UIColor colorWithRed:0./255. green:0./255. blue:0./255. alpha:0.5];
         
-        [_dimmedView addGestureRecognizer:self.tapGesture];
+        [_backgroundView addGestureRecognizer:self.tapGesture];
     }
     
-    return _dimmedView;
-}
-
--(void)setDimmedViewAlpha:(CGFloat)dimmedViewAlpha {
-    _dimmedViewAlpha = MAX(0, MIN(1, dimmedViewAlpha));
+    return _backgroundView;
 }
 
 -(void)animateToScale:(CGFloat)scale {
@@ -279,32 +272,32 @@
 }
 
 -(void)showDimmedViewAnimated:(BOOL)animated {
-    self.dimmedView.alpha = 0;
-    [self.view insertSubview:self.dimmedView belowSubview:self.menuButton];
+    self.backgroundView.alpha = 0;
+    [self.view insertSubview:self.backgroundView belowSubview:self.menuButton];
     
     if (animated) {
-        [UIView animateWithDuration:self.dimmedViewAnimationSpeed animations:^{
-            self.dimmedView.alpha = 1;
+        [UIView animateWithDuration:self.backgroundViewAnimationSpeed animations:^{
+            self.backgroundView.alpha = 1;
         }];
     }
     else {
-        self.dimmedView.alpha = 1;
+        self.backgroundView.alpha = 1;
     }
 }
 
 -(void)hideDimmedViewAnimated:(BOOL)animated {
     if (animated) {
-        [UIView animateWithDuration:self.dimmedViewAnimationSpeed animations:^{
-            self.dimmedView.alpha = 0;
+        [UIView animateWithDuration:self.backgroundViewAnimationSpeed animations:^{
+            self.backgroundView.alpha = 0;
         } completion:^(BOOL finished) {
-            [self.dimmedView removeFromSuperview];
-            self.dimmedView = nil;
+            [self.backgroundView removeFromSuperview];
+            self.backgroundView = nil;
         }];
     }
     else {
-        self.dimmedView.alpha = 0;
-        [self.dimmedView removeFromSuperview];
-        self.dimmedView = nil;
+        self.backgroundView.alpha = 0;
+        [self.backgroundView removeFromSuperview];
+        self.backgroundView = nil;
     }
 }
 

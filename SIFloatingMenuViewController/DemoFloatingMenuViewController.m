@@ -17,9 +17,13 @@
 @implementation DemoFloatingMenuViewController
 
 -(void)viewDidLoad {
-    [super viewDidLoad];
-    
     [self loadMenuItems];
+    
+    [self.backgroundView setBlurEnabled:YES];
+    [self.backgroundView setBlurRadius:20];
+    self.backgroundView.tintColor = [UIColor clearColor];
+    
+    [super viewDidLoad];
 }
 
 -(void)loadMenuItems {

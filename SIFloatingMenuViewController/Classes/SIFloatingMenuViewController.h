@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SIMenuButton.h"
 #import "SIMenuTableView.h"
+#import "FXBlurView.h"
 
 /**
  *  Choices for how the menu button animates onto screen.
@@ -136,19 +137,19 @@ typedef void (^MenuItemSelected)(SIMenuItem *menuItem, NSUInteger selectedIndex)
 @property (strong, nonatomic) NSArray *viewControllers;
 
 /**
- *  The alpha of the view behind the menu. Must be between 0 and 1. 0 is fully transparrent, 1 is fully opaque.
- */
-@property (nonatomic) CGFloat dimmedViewAlpha;
-
-/**
  *  The speed at which the dimmed view should animate it's alpha.
  */
-@property (nonatomic) CGFloat dimmedViewAnimationSpeed;
+@property (nonatomic) CGFloat backgroundViewAnimationSpeed;
 
 /**
  *  Should the menu dismiss if the background is tapped.
  */
 @property (nonatomic) BOOL backgroundTapDismissesMenu;
+
+/**
+ *  The view displayed behind the menu when the menu is being displayed.
+ */
+@property (strong, nonatomic) FXBlurView *backgroundView;
 
 /**
  *  DESIGNATED INITIALIZER
